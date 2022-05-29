@@ -18,28 +18,81 @@
 
 <body>
     <main class="container">
+
         <div class="header">
+            <div class="search-container">
+                <form class="search-form" action="">
+                    <input class="search-button" type="image" src="./images/magnify.svg">
+                    <input class="search-input" type="text" name="search">
+                </form>
+            </div>
+
+            <div class="account-info-container">
+                <input class="ring-button" type="image" src="./images/bell-ring-outline.svg">
+                <img class="account-avatar" src="./images/wonder-day-avatar-memes-cats-41.jpg" height="28px" width="28px" alt="avatar">
+                <div class="user-name">Morgan Oakley</div>
+            </div>
+
+            <div class="greetings-container">
+                <img class="greetings-avatar" src="./images/wonder-day-avatar-memes-cats-41.jpg" height="44px" width="44px" alt="">
+                <div class="greetings-text">
+                    <p class="greetings-hi">Hi there,</p>
+                    <p class="greetings-name">Morgan Oakley (@morgan)</p>
+                </div>
+            </div>
+
+            <div class="content-buttons-container">
+                <button class="content-button">New</button>
+                <button class="content-button">Upload</button>
+                <button class="content-button">Share</button>
+            </div>
 
         </div>
+
         <div class="sidebar">
             <div class="logo-container">
-                <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-                    <path fill="currentColor" d="M13,3V9H21V3M13,21H21V11H13M3,21H11V15H3M3,13H11V3H3V13Z" />
-                </svg>
-                Dashboard
+                <img class="filter-white dashboard" src="./images/view-dashboard.svg" alt="Dashboard">Dashboard
             </div>
+
             <ul class="nav">
-                <li class="home">Home</li>
-                <li class="profile">Profile</li>
-                <li class="messages">Messages</li>
-                <li class="history">History</li>
-                <li class="tasks">Tasks</li>
-                <li class="communities">Communities</li>
-                <li class="privacy">Privacy</li>
-                <li class="settings">Settings</li>
-                <li class="support">Support</li>
+                <li class="home nav-li">
+                    <img class="filter-white nav-icon" src="./images/home.svg" alt="Home">Home
+                </li>
+                <li class="profile nav-li">
+                    <img class="filter-white nav-icon" src="./images/card-account-details.svg" alt="Profile">
+                    Profile
+                </li>
+                <li class="messages nav-li">
+                    <img class="filter-white nav-icon" src="./images/message-reply.svg" alt="Messages">
+                    Messages
+                </li>
+                <li class="history nav-li">
+                    <img class="filter-white nav-icon" src="./images/clock-time-three.svg" alt="History">
+                    History
+                </li>
+                <li class="tasks nav-li">
+                    <img class="filter-white nav-icon" src="./images/file-multiple.svg" alt="Tasks">
+                    Tasks
+                </li>
+                <li class="communities nav-li">
+                    <img class="filter-white nav-icon" src="./images/account-group.svg" alt="Communities">
+                    Communities
+                </li>
+                <li class="settings nav-li">
+                    <img class="filter-white nav-icon" src="./images/cog.svg" alt="Settings">
+                    Settings
+                </li>
+                <li class="support nav-li">
+                    <img class="filter-white nav-icon" src="./images/help-box.svg" alt="Support">
+                    Support
+                </li>
+                <li class="privacy nav-li">
+                    <img class="filter-white nav-icon" src="./images/shield-check.svg" alt="Privacy">
+                    Privacy
+                </li>
             </ul>
         </div>
+
         <div class="main-content">
             CONTENT
         </div>

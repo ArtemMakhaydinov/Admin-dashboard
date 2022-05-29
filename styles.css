@@ -6,17 +6,124 @@
   font-family: "Roboto", sans-serif;
 }
 
+body {
+  display: flex;
+  justify-content: center;
+}
+
 .container {
   display: grid;
-  grid-template: 170px 1fr / 1fr 4fr;
+  grid-template: 100px 1fr / 175px 1fr;
   height: 100vh;
+  width: min(100vw, 840px);
 }
+
+/* HEADER */
 
 .header {
   background-color: #fff;
   grid-row: 1/2;
   grid-column: 2/3;
+  display: grid;
+  grid-template: 2fr 3fr / 3fr 2fr;
+  padding: 3px 5% 0 3.5%;
+  font-weight: 900;
 }
+
+/* Header search */
+
+.search-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-form {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+
+.search-button {
+  height: 14px;
+  margin-right: 12px;
+}
+
+.search-input {
+  height: 18px;
+  width: calc(100% - 26px);
+  border: none;
+  border-radius: 9px;
+  background-color: #e2e8f0;
+}
+
+/* Header account info */
+
+.account-info-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 12px;
+}
+
+.ring-button {
+  height: 14px;
+}
+
+.account-avatar {
+  border-radius: 50%;
+  margin: auto 20px;
+}
+
+.user-name {
+  font-size: 0.65rem;
+}
+
+/* Header greetings */
+
+.greetings-container {
+  display: flex;
+  align-items: center;
+}
+
+.greetings-avatar {
+  display: inline-block;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.greetings-hi {
+  font-size: 0.5rem;
+}
+
+.greetings-name {
+  font-size: 0.85rem;
+  margin-top: 2px;
+}
+
+/* Header content buttons */
+
+.content-buttons-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 18px;
+}
+
+.content-button {
+  color: #fff;
+  background-color: #0ea5e9;
+  font-size: 0.6rem;
+  font-weight: 700;
+  height: 24px;
+  width: 60px;
+  border: none;
+  border-radius: 12px;
+}
+
+/* SIDEBAR */
 
 .sidebar {
   background-color: #0ea5e9;
@@ -26,9 +133,49 @@
 }
 
 .logo-container {
-    font-size: ;
+  font-size: 1rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  margin-top: 9px;
+  margin-left: 2px;
 }
 
+.dashboard {
+  margin: auto 7px;
+  height: 28px;
+}
+
+.nav {
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-top: 30px;
+  margin-left: 2px;
+}
+
+.nav-li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-top: 13px;
+}
+
+.nav-icon {
+  height: 14px;
+  margin: auto 14px;
+}
+
+.settings {
+  margin-top: 42px;
+}
+
+/* CONTENT SECTION */
+
 .main-content {
-  background-color: #e0f2fe;
+  background-color: #e2e8f0;
+}
+
+.filter-white {
+  filter: invert(100%) sepia(0%) saturate(1%) hue-rotate(166deg)
+    brightness(104%) contrast(101%);
 }
