@@ -19,7 +19,7 @@ body {
 .container {
   display: grid;
   grid-template: 100px 1fr / 175px 1fr;
-  height: 100vh;
+  /* height: 100vh; */
   width: min(100vw, 840px);
 }
 
@@ -278,7 +278,6 @@ hr {
 /* Content trending */
 
 .trending-container {
-  margin-top: auto;
   margin-bottom: 0;
   background-color: #fff;
   border-radius: 4px;
@@ -289,6 +288,7 @@ hr {
 
 .trending-h2 {
   margin-top: auto;
+  margin-bottom: 12px;
 }
 
 .trending-container {
