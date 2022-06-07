@@ -20,7 +20,7 @@ body {
   display: grid;
   grid-template: 177px 1fr / 285px 1fr;
   height: 100vh;
-  width: min(1440px, 100vh);
+  width: min(1440px, 100%);
 }
 
 h2 {
